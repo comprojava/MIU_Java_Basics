@@ -20,7 +20,12 @@ public class Pisco2_DaphneyArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Restarting .....");
+		int[] a = {2, 4, 2};// is a daphney
+		int[] b = {1, 3, 17, -5};// is a daphney
+		int[] c = {3, 2, 5};// is  not a daphney
+		System.out.println(isDaphney(a));
+		System.out.println(isDaphney(b));
+		System.out.println(isDaphney(c));
 	}
 
 }
