@@ -1,21 +1,20 @@
 package leet;
 
 public class LongestCommonPrefix {
-	public String longestCommonPrefix(String[] strs) {
-		StringBuilder sb = new StringBuilder();
-		sb.append(strs[0]);
-		String longest = strs[0];
+	public static String longestCommonPrefix(String[] strs) {
+		String longestPrefix = strs[0];
 		int n=strs.length;
 		for(int i=0;i<n;i++) {
-			for(int j=0;j<strs[i].length();j++) {
-				if()
-			}
+			while(strs[i].indexOf(longestPrefix)!=0)
+				longestPrefix=longestPrefix.substring(0, longestPrefix.length()-1);
+				
 		}
-		return longest;
+		return longestPrefix;
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println(longestCommonPrefix(new String[] {"flower","flow","flight"}));
+		System.out.println(longestCommonPrefix(new String[] {"dog","racecar","car"}));
 
 	}
 
