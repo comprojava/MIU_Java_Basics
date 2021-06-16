@@ -1,4 +1,4 @@
-package Leet;
+package leet;
 
 public class TwoSum {
 	public static int[] twosum(int[] nums, int target) {
